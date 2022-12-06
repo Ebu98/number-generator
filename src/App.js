@@ -13,16 +13,16 @@ export default function App() {
     return NewNumber
 
     }
-    function rollDice() {
+    function rollNumber() {
       setRandomNum(allNewNumber())
   }
     const randNumber = randomNum.map(num => <Generator value={num}/>)
     return (
         <main>
-            <div className="dice-container">
+            <div className="randomnumber-container">
               {randNumber}
             </div>
-            <button className="generate-btn" onClick={rollDice}>Generate</button>
+            <button className="generate-btn" onClick={rollNumber}>Generate</button>
         </main>
     )
 }
